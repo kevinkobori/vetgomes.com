@@ -8,7 +8,6 @@
     <!-- id="app" -->
     <div class="container">
       <div
-        v-scrollanimation
         class="card-wrap"
         @mousemove="handleMouseMove"
         @mouseenter="handleMouseEnter"

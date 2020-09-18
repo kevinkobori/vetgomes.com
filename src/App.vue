@@ -54,13 +54,13 @@ export default {
 </script>
 
 <style>
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 1em;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: rgb(85, 85, 85);
-}
+} */
 
 .q-card {
   border-radius: 0px;
