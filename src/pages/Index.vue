@@ -19,6 +19,7 @@
         >
           <!-- style="background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);" -->
           <div class="row wrap justify-center items-center content-center">
+            <Page1/>
             <!-- <transition
               name="bounce"
               mode="out-in"
@@ -1188,10 +1189,12 @@ import { debounce } from 'quasar'
 import Table from '../components/Table'
 // import AOS from 'aos'
 // import 'aos/dist/aos.css'
+import Page1 from './page1/P1'
 
 export default {
   components: {
-    Table
+    Table,
+    Page1
   },
   data () {
     return {
@@ -1206,9 +1209,9 @@ export default {
         scrollBar: false,
         // parallax: true,
         autoScrolling: true,
-        // menu: '#menu',
+        menu: '#menu',
         navigation: true,
-        controlArrows: false,
+        controlArrows: true,
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7']
         // sectionsColor: ['#fec401', '#e80001', '#0798ec', '#ff5f45', '#41b883', '#fec401', '#e80001']
       },
@@ -1310,9 +1313,55 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style>
 button.without-icon i {
   display: none;
+}
+
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -28px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 28.5px 24px 28.5px 0;
+    border-color: transparent #e9539555 transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 28.5px 0 28.5px 24px;
+    border-color: transparent transparent transparent #e9539555;
+}
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+  margin-top: 300px;
+  background: #e95395;
+  /* position: absolute; */
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  margin-top: 500%;
+  border: 1px solid #e95395;
+  background: #e6157000;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span, #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+  width: 8px;
+  height: 8px;
+  margin: 500% 0 0 -2px;
 }
 </style>
 
