@@ -7,10 +7,9 @@
     >
       <!-- 1 -->
       <!-- v-if="$q.screen.gt.sm" -->
-      <div
-        class="section"
-        style="background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"
-      >
+
+      <div class="section">
+        <!-- style="background: linear-gradient(0deg, rgba(204,231,252,1) 0%, rgba(242,230,233,1) 100%);" -->
         <div class="text-center">
           <div class="row wrap justify-center items-center content-center">
             <Page1 />
@@ -37,11 +36,13 @@
       </div> -->
       <!-- 2 -->
       <!-- v-if="$q.screen.gt.sm" -->
-      <div class="section">
-        <!-- style="background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);" -->
+      <div
+        class="section"
+        style="background: linear-gradient(0deg, rgba(242,230,233,1) 0%, rgba(237,170,188,1) 100%);"
+      >
         <div class="text-center">
           <div class="row wrap justify-center items-center content-center">
-            <Page2 />
+            <!-- <Page2 /> -->
           </div>
         </div>
       </div>
@@ -67,11 +68,11 @@
       <!-- v-if="$q.screen.gt.sm" -->
       <div
         class="section"
-        style="background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"
+        style="background: linear-gradient(0deg, rgba(224,208,209,1) 0%, rgba(242,230,233,1) 100%);"
       >
         <div class="text-center">
           <div class="row wrap justify-center items-center content-center">
-            <Page1 />
+            <!-- <Page3 /> -->
           </div>
         </div>
       </div>
@@ -97,11 +98,11 @@
       <!-- v-if="$q.screen.gt.sm" -->
       <div
         class="section"
-        style="background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"
+        style="background: linear-gradient(0deg, rgba(179,187,211,1) 0%, rgba(224,208,209,1) 100%);"
       >
         <div class="text-center">
           <div class="row wrap justify-center items-center content-center">
-            <Page1 />
+            <!-- <Page4 /> -->
           </div>
         </div>
       </div>
@@ -127,11 +128,11 @@
       <!-- v-if="$q.screen.gt.sm" -->
       <div
         class="section"
-        style="background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"
+        style="background: linear-gradient(0deg, rgba(204,231,252,1) 0%, rgba(179,187,211,1) 100%);"
       >
         <div class="text-center">
           <div class="row wrap justify-center items-center content-center">
-            <Page1 />
+            <!-- <Page5 /> -->
           </div>
         </div>
       </div>
@@ -156,10 +157,45 @@
     </full-page>
     <!-- sticky -->
     <q-page-sticky
-      position="top-right"
-      :offset="[-60, -50]"
+      position="top-left"
+      :offset="[10, 190]"
     >
-      <svg
+      <!-- <div
+        class="dots"
+        onclick="this.classList.toggle('active');"
+      >
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="shadow cut"></div>
+        <div class="container cut">
+          <div class="drop cut2"></div>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              Mark as read
+            </li>
+            <li>
+              Flag as important
+            </li>
+            <li>
+              Save for later
+            </li>
+            <li>
+              Move to trash
+            </li>
+            <li>
+              Mark as spam
+            </li>
+          </ul>
+        </div>
+        <div class="dot"></div>
+      </div>
+      <div
+        class="cursor"
+        onclick="document.querySelector('.dots').classList.toggle('active');"
+      ></div> -->
+      <!-- <svg
         id="stroke"
         xmlns="http://www.w3.org/2000/svg"
         width="0"
@@ -183,76 +219,147 @@
           style="color:#e953b7;"
           @click="$refs.fullpage.api.moveTo(2,0)"
         >Gomes
-          <!-- href="/" -->
-          <svg
-            class="button-stroke"
-            viewBox="0 0 154 13"
-          >
-            <use href="#line"></use>
-          </svg>
-          <svg
-            class="button-stroke"
-            viewBox="0 0 154 13"
-          >
-            <use href="#line"></use>
-          </svg>
-        </a>
-        <a
-          class="btn"
-          style="color:#e953b7;"
+      <svg
+        class="button-stroke"
+        viewBox="0 0 154 13"
+      >
+        <use href="#line"></use>
+      </svg>
+      <svg
+        class="button-stroke"
+        viewBox="0 0 154 13"
+      >
+        <use href="#line"></use>
+      </svg>
+      </a>
+      <a
+        class="btn"
+        style="color:#e953b7;"
+        @click="$refs.fullpage.api.moveTo(3,0)"
+      >Serviços
+        <svg
+          class="button-stroke"
+          viewBox="0 0 154 13"
+        >
+          <use href="#line"></use>
+        </svg>
+        <svg
+          class="button-stroke"
+          viewBox="0 0 154 13"
+        >
+          <use href="#line"></use>
+        </svg>
+      </a>
+      <a
+        class="btn"
+        style="color:#e953b7;"
+        @click="$refs.fullpage.api.moveTo(4,0)"
+      >Atendimento
+        <svg
+          class="button-stroke"
+          viewBox="0 0 154 13"
+        >
+          <use href="#line"></use>
+        </svg>
+        <svg
+          class="button-stroke"
+          viewBox="0 0 154 13"
+        >
+          <use href="#line"></use>
+        </svg>
+      </a>
+      <a
+        class="btn"
+        style="color:#e953b7;"
+        @click="$refs.fullpage.api.moveTo(5,0)"
+      >Agendar
+        <svg
+          class="button-stroke"
+          viewBox="0 0 154 13"
+        >
+          <use href="#line"></use>
+        </svg>
+        <svg
+          class="button-stroke"
+          viewBox="0 0 154 13"
+        >
+          <use href="#line"></use>
+        </svg>
+      </a>
+      </div> -->
+      <!-- <q-card>
+        <q-tabs
+          v-model="tab"
+          dense
+          class="text-grey"
+          active-color="primary"
+          indicator-color="primary"
+          align="justify"
+          narrow-indicator
+        >
+          <q-tab
+            name="mails"
+            label="Mails"
+          />
+          <q-tab
+            name="alarms"
+            label="Alarms"
+          />
+          <q-tab
+            name="movies"
+            label="Movies"
+          />
+        </q-tabs>
+
+        <q-separator />
+
+        <q-tab-panels
+          v-model="tab"
+          animated
+        >
+          <q-tab-panel name="mails">
+            <div class="text-h6">Mails</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+
+          <q-tab-panel name="alarms">
+            <div class="text-h6">Alarms</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+
+          <q-tab-panel name="movies">
+            <div class="text-h6">Movies</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+        </q-tab-panels>
+      </q-card> -->
+      <div class="menu">
+        <div class="label">Manu</div>
+        <div class="spacer"></div>
+        <div
+          class="item"
+          @click="$refs.fullpage.api.moveTo(1,0)"
+        ><span>&nbsp;&nbsp;&nbsp;&nbsp;Início</span></div>
+        <div
+          class="item"
+          @click="$refs.fullpage.api.moveTo(2,0)"
+        ><span>&nbsp;&nbsp;&nbsp;&nbsp;Gomes</span></div>
+        <div
+          class="item"
           @click="$refs.fullpage.api.moveTo(3,0)"
-        >Serviços
-          <svg
-            class="button-stroke"
-            viewBox="0 0 154 13"
-          >
-            <use href="#line"></use>
-          </svg>
-          <svg
-            class="button-stroke"
-            viewBox="0 0 154 13"
-          >
-            <use href="#line"></use>
-          </svg>
-        </a>
-        <a
-          class="btn"
-          style="color:#e953b7;"
+        ><span>&nbsp;&nbsp;&nbsp;&nbsp;Seviços</span></div>
+        <div
+          class="item"
           @click="$refs.fullpage.api.moveTo(4,0)"
-        >Atendimento
-          <svg
-            class="button-stroke"
-            viewBox="0 0 154 13"
-          >
-            <use href="#line"></use>
-          </svg>
-          <svg
-            class="button-stroke"
-            viewBox="0 0 154 13"
-          >
-            <use href="#line"></use>
-          </svg>
-        </a>
-        <a
-          class="btn"
-          style="color:#e953b7;"
+        ><span>&nbsp;&nbsp;&nbsp;&nbsp;Agendar</span></div>
+        <div
+          class="item"
           @click="$refs.fullpage.api.moveTo(5,0)"
-        >Agendar
-          <svg
-            class="button-stroke"
-            viewBox="0 0 154 13"
-          >
-            <use href="#line"></use>
-          </svg>
-          <svg
-            class="button-stroke"
-            viewBox="0 0 154 13"
-          >
-            <use href="#line"></use>
-          </svg>
-        </a>
+        ><span>&nbsp;&nbsp;&nbsp;&nbsp;Contato</span></div>
+
       </div>
     </q-page-sticky>
+
   </q-page>
 </template>
 
@@ -275,6 +382,7 @@ export default {
   },
   data () {
     return {
+      // tabs: 'mail',
       options: {
         licenseKey: 'YOUR_KEY_HERE',
         afterLoad: this.afterResize,
@@ -350,7 +458,7 @@ export default {
 } */
 </style>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .btn {
   display: inline-block;
   color: white;
@@ -385,5 +493,147 @@ export default {
     stroke-width: 5;
     transition: stroke-dashoffset 800ms ease-out;
   }
+}
+</style>
+
+
+<style scoped>
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url(https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Merienda+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Pacifico);
+/* body {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Lato", sans-serif;
+  margin: 20px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+} */
+.menu {
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Gloria Hallelujah", cursive; */
+  font-family: "Merienda One", cursive;
+  /* font-family: "Pacifico", cursive; */
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: none;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.menu:hover {
+  pointer-events: all;
+}
+.label {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: all;
+}
+.spacer {
+  display: inline-block;
+  width: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+.spacer:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #ffffff;
+  height: 1px;
+  width: 0%;
+  transition: width 0.25s ease;
+  transition-delay: 0.7s;
+}
+.item {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease, top 0.5s ease;
+  transition-delay: 0;
+}
+span {
+  transition: color 0.5s ease;
+}
+.item:hover span {
+  color: #fa5bff;
+}
+.menu:hover .spacer:before {
+  width: 100%;
+  transition-delay: 0s;
+}
+.menu:hover .item {
+  opacity: 1;
+  top: 0px;
+}
+.item:nth-child(1) {
+  transition-delay: 0.45s;
+}
+.item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+.item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.item:nth-child(5) {
+  transition-delay: 0.25s;
+}
+.item:nth-child(6) {
+  transition-delay: 0.2s;
+}
+.item:nth-child(7) {
+  transition-delay: 0.15s;
+}
+.item:nth-child(8) {
+  transition-delay: 0.1s;
+}
+.item:nth-child(9) {
+  transition-delay: 0.05s;
+}
+.item:nth-child(10) {
+  transition-delay: 0s;
+}
+.menu:hover .item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+.menu:hover .item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.menu:hover .item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+.menu:hover .item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.menu:hover .item:nth-child(5) {
+  transition-delay: 0.45s;
+}
+.menu:hover .item:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.menu:hover .item:nth-child(7) {
+  transition-delay: 0.55s;
+}
+.menu:hover .item:nth-child(8) {
+  transition-delay: 0.6s;
+}
+.menu:hover .item:nth-child(9) {
+  transition-delay: 0.65s;
+}
+.menu:hover .item:nth-child(10) {
+  transition-delay: 0.7s;
 }
 </style>

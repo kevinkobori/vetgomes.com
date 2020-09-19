@@ -7,64 +7,20 @@
     <div class="blur">
       <q-page-container>
         <q-page class="flex flex-center">
-          <!-- <div class="row">
-            <h6>O cuidado com seu pet, sem sair de casa!</h6>
-          </div>
-          <div class="row">
-            <h3>Veterinário em Casa</h3>
-          </div> -->
-          <!-- <br> -->
-          <!-- <div class="downArrow bounce">
-            <img
-              width="40"
-              height="40"
-              alt=""
-              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4="
-            />
-          </div> -->
-          <!-- <div class="fit row wrap justify-center items-start content-start">
-          </div> -->
-          <div class="fit row wrap justify-center items-start content-start">
-          </div>
-          <div class="fit row wrap justify-center items-start content-start">
-          </div>
-          <div class="fit row wrap justify-center items-start content-start">
-          </div>
           <div
             v-scrollanimation
-            class="fit row wrap justify-center items-start content-start"
+            class="fit row wrap justify-center items-center content-center"
           >
-            <!-- <q-card> -->
-            <p class="col-12 text-h6">
-              Socorrendo o seu pet sem sair de casa!
-            </p>
-            <!-- </q-card> -->
-            <br>
-            <p class="col-12 text-h3">
-              Veterinária a domicílio
-            </p>
-          </div>
-          <div class="fit row wrap justify-center items-center content-center">
-            <Btn>
-            </Btn>
-          </div>
-          <div class="fit row wrap justify-center items-center content-center">
-            <!-- <div class="mouse"></div> -->
-            <div class="downArrow bounce">
-              <img
-                width="40"
-                height="40"
-                alt=""
-                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4="
-              />
+            <div>
+              <h1 class="heading heading--stroke-shadow">Atendimento a domicílio</h1>
+              <p class="heading heading--stroke-shadow2">Seu pet <strong>sendo cuidado</strong> no conforto de
+                <strong>sua casa</strong>.
+              </p>
             </div>
           </div>
-          <div class="fit row wrap justify-center items-center content-center">
-            <!-- <p>Scroll</p> -->
-            <!-- <p>Scroll</p> -->
-          </div>
-          <!-- <div class="mouse"></div>
-          <p>Scroll</p> -->
+          <Btn>
+          </Btn>
+          <div class="mouse"></div>
         </q-page>
       </q-page-container>
     </div>
@@ -83,83 +39,9 @@ export default {
 </script>
 
 <style scoped>
-.downArrow {
-  /* position: fixed;
-  bottom: 5%;
-  left: 50%; */
-  position: absolute;
-  top: 90%;
-}
-.bounce {
-  -moz-animation: bounce 3s infinite;
-  -webkit-animation: bounce 3s infinite;
-  animation: bounce 3s infinite;
-}
-@-moz-keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    -moz-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@-webkit-keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-
 .blur {
-  background: rgba(0, 0, 0, 0.2);
-  /* background: rgba(247, 0, 255, 0.2); */
-  /* opacity: 1; */
+  background: rgba(197, 0, 148, 0.2);
+  /* background: rgba(0, 0, 0, 0.3); */
   backdrop-filter: blur(2px);
 }
 
@@ -177,7 +59,6 @@ export default {
 .before-enter {
   opacity: 0;
   background-position: bottom;
-  /* transform: translateY(100vw); */
   -webkit-filter: blur(5px);
   filter: blur(5px);
   transition: all 2s ease-out;
@@ -188,41 +69,22 @@ export default {
   background-position: top;
   -webkit-filter: blur(0px);
   filter: blur(0px);
-  /* transform: translateY(0px); */
 }
 </style>
 
 <style scoped>
-@import url(https://fonts.googleapis.com/css?family=Cabin);
-p {
-  /* position: relative; */
-  /* position: absolute;
-  top: 46%; */
-  /* font-size: 38px; */
-  /* margin-top: 50px; */
-  font-family: "Cabin", sans-serif;
-  letter-spacing: 3px;
-  /* text-indent: 12px; */
-  color: #fff;
-  animation: colorText 10s ease-out infinite, nudgeText 10s ease-out infinite;
-  /* text-decoration: none; */
-  /* text-transform: uppercase; */
-  text-shadow: -2px 3px 4px #333;
-}
 .mouse {
   opacity: 0.5;
   position: absolute;
   top: 90%;
-  /* right: 50vw; */
   background: #fff
     linear-gradient(transparent 0%, transparent 50%, #fff 50%, #fff 100%);
-  /* position: relative; */
   width: 26px;
   height: 44px;
   background-size: 50% 50%;
   border-radius: 100px;
   background-size: 225%;
-  animation: colorSlide 10s linear infinite, nudgeMouse 10s ease-out infinite;
+  animation: nudgeMouse 10s ease-out infinite;
 }
 .mouse:before,
 .mouse:after {
@@ -237,7 +99,7 @@ p {
 .mouse:before {
   width: 23px;
   height: 41px;
-  background-color: #ff49ff;
+  background-color: #fa5bff;
   border-radius: 100px;
 }
 .mouse:after {
@@ -247,49 +109,7 @@ p {
   border-radius: 100%;
   animation: trackBallSlide 10s linear infinite;
 }
-@keyframes colorSlide {
-  0% {
-    background-position: 0% 100%;
-  }
-  20% {
-    background-position: 0% 0%;
-  }
-  21% {
-    /* background-color: #4e5559; */
-  }
-  29.99% {
-    /* background-color: #fff; */
-    /* background-position: 0% 0%; */
-  }
-  30% {
-    /* background-color: #4e5559; */
-    /* background-position: 0% 100%; */
-  }
-  50% {
-    /* background-position: 0% 0%; */
-  }
-  51% {
-    /* background-color: #4e5559; */
-  }
-  59.99% {
-    /* background-color: #fff; */
-    /* background-position: 0% 0%; */
-  }
-  60% {
-    /* background-color: #4e5559; */
-    /* background-position: 0% 100%; */
-  }
-  80% {
-    /* background-position: 0% 0%; */
-  }
-  81% {
-    /* background-color: #4e5559; */
-  }
-  89.99%,
-  100% {
-    /* background-color: #fff; */
-  }
-}
+
 @keyframes trackBallSlide {
   0% {
     opacity: 1;
@@ -381,47 +201,168 @@ p {
     transform: translateY(0);
   }
 }
-@keyframes nudgeText {
-  0% {
-    transform: translateY(0);
+</style>
+
+
+<style scoped>
+/* a {
+  text-decoration: none;
+  color: #9ca0b1;
+}
+.wrapper {
+  text-align: center;
+}
+.wrapper h1 {
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  background: linear-gradient(to right, #ff5bdb 10%, #5bfaff 50%, #ff5bdb 80%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5.5s linear infinite;
+  display: inline-block;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
-  20% {
-    transform: translateY(2px);
-  }
-  30% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(2px);
-  }
-  60% {
-    transform: translateY(0);
-  }
-  80% {
-    transform: translateY(2px);
-  }
-  90% {
-    transform: translateY(0);
+} */
+</style>
+
+<style scoped>
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Pacifico);
+@import url(https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Merienda+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Codystar&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Sarina&display=swap);
+
+h1,
+p {
+  font-weight: 700;
+  /* font-family: "Petit Formal Script", cursive; */
+  font-family: "Dancing Script", cursive;
+  /* font-family: "Codystar", cursive; */
+  /* font-family: "Cinzel Decorative", cursive; */
+  /* font-family: "Mansalva", cursive; */
+  /* font-family: "Sarina", cursive; */
+  /* font-family: "Gloria Hallelujah", cursive; */
+  /* font-family: "Leckerli One", cursive; */
+  /* font-family: "Merienda One", cursive; */
+  /* font-family: "Pacifico", cursive; */
+  margin: 0 0 0.5rem;
+}
+h1 {
+  font-size: 4rem;
+  /* position: relative;
+  color: #fff;
+  background: linear-gradient(to right, #f3bd3a 10%, #5bffd6 50%, #f3bd3a 80%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5.5s linear infinite;
+  display: inline-block;
+  font-size: 4rem;
+  text-shadow: 2px -2px 1px #fa5bff; */
+}
+p {
+  /* color: #f3bd3a; */
+  font-size: 2rem;
+}
+
+strong::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p > strong::after {
+  bottom: -0.2rem;
+  height: 1rem;
+  left: -0.25rem;
+  right: -0.25rem;
+}
+
+p strong {
+  position: relative;
+  display: inline-block;
+  /* color: #f3bd3a; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
 }
-@keyframes colorText {
-  21% {
-    color: #f9cd2c;
-  }
-  30% {
-    color: #fff;
-  }
-  51% {
-    color: #f9cd2c;
-  }
-  60% {
-    color: #fff;
-  }
-  81% {
-    color: #f9cd2c;
-  }
-  90% {
-    color: #fff;
-  }
+</style>
+
+<style scoped>
+/* .heading {
+  font-size: 6rem;
+  letter-spacing: 6px;
+  margin: 0;
+} */
+/* .heading--stroke {
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0d1b1e;
+  -moz-text-stroke-color: #0d1b1e;
+  color: transparent;
+} */
+/* .heading--shadow {
+  text-shadow: 6px 6px #2dc7ff;
+} */
+.heading--stroke-shadow {
+  color: #f2cee6;
+  text-shadow: -1px 0 #0d1b1e, 0 -1px #0d1b1e, 1.5px 0 #0d1b1e, 0 1.5px #0d1b1e,
+    1.5px 1.5px #0d1b1e, -1px -1px #0d1b1e, -1px 1.5px #0d1b1e, 4px 4px #f3bd3a;
 }
+.heading--stroke-shadow2 {
+  color: #f2cee6;
+  text-shadow: -1px 0 #0d1b1e, 0 -1px #0d1b1e, 1.5px 0 #0d1b1e, 0 1.5px #0d1b1e,
+    1.5px 1.5px #0d1b1e, -1px -1px #0d1b1e, -1px 1.5px #0d1b1e,
+    1.5px -1px #0d1b1e;
+}
+/* .heading--halftone {
+  position: relative;
+} */
+/* .heading--halftone:after {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==")
+    repeat;
+  -webkit-text-stroke-width: 0;
+  -moz-text-stroke-width: 0;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 6rem;
+  letter-spacing: 6px;
+  left: calc(50% + 6px);
+  top: calc(50% + 6px);
+  content: "Atendimento a domicílio";
+  z-index: -1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+} */
+/* .heading--halftone-color:after {
+  background-color: #2dc7ff;
+} */
+/* .info {
+  padding: 1rem 0;
+} */
 </style>
