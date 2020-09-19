@@ -37,13 +37,11 @@
       </div> -->
       <!-- 2 -->
       <!-- v-if="$q.screen.gt.sm" -->
-      <div
-        class="section"
-        style="background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"
-      >
+      <div class="section">
+        <!-- style="background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);" -->
         <div class="text-center">
           <div class="row wrap justify-center items-center content-center">
-            <Page1 />
+            <Page2 />
           </div>
         </div>
       </div>
@@ -182,6 +180,7 @@
       <div class="container">
         <a
           class="btn"
+          style="color:#e953b7;"
           @click="$refs.fullpage.api.moveTo(2,0)"
         >Gomes
           <!-- href="/" -->
@@ -200,6 +199,7 @@
         </a>
         <a
           class="btn"
+          style="color:#e953b7;"
           @click="$refs.fullpage.api.moveTo(3,0)"
         >Serviços
           <svg
@@ -217,6 +217,7 @@
         </a>
         <a
           class="btn"
+          style="color:#e953b7;"
           @click="$refs.fullpage.api.moveTo(4,0)"
         >Atendimento
           <svg
@@ -234,6 +235,7 @@
         </a>
         <a
           class="btn"
+          style="color:#e953b7;"
           @click="$refs.fullpage.api.moveTo(5,0)"
         >Agendar
           <svg
@@ -370,7 +372,7 @@ export default {
   display: block;
   width: calc(100% - 40px);
   height: 20px;
-  stroke: #fe63ff;
+  stroke: #e953b7;
   position: absolute;
   left: 20px;
   bottom: -10px;
@@ -379,7 +381,7 @@ export default {
   &:nth-child(2) {
     stroke-dasharray: 650px;
     stroke-dashoffset: 650px;
-    stroke: #00ffff;
+    stroke: #00c3ff;
     stroke-width: 5;
     transition: stroke-dashoffset 800ms ease-out;
   }

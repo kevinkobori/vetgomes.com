@@ -1,9 +1,11 @@
 <template>
+  <!-- class="bg-image" -->
   <q-layout
     v-scrollanimation
-    class="bg-image"
+    class="bg-white"
     v-cloak
   >
+    <!-- style="background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);" -->
     <div class="blur">
       <q-page-container>
         <q-page class="flex flex-center">
@@ -100,16 +102,16 @@ export default {
 }
 
 .blur {
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4);
   opacity: 1;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px); */
 }
 
 .bg-image {
-  background-image: url("../../assets/img/manu/manu1.jpeg");
-  background-attachment: fixed;
+  /* background-image: url("../../assets/img/manu/manu1.jpeg"); */
+  /* background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 [v-cloak] {
